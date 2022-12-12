@@ -1,0 +1,42 @@
+header {
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+}
+.input_header {
+    background-color: #e5e5e5;
+}
+.mobile-logo {
+    display: none;
+}
+.all {
+    height: 100vh;
+}
+aside {
+    width: 10%;
+}
+main {
+    width: 90%;
+}
+.section_blue {
+    background-color: #1b72e8;
+}
+.avatar {
+    width: 25px;
+    margin-right: 10px;
+}
+.aside-sec {
+    background-color: #051e34;
+}
+span, .blaze {
+    background-color: #165bba;
+    font-size: 14px;
+}
+.class {
+    border: 1px solid #d5d5d5;
+}
+.prox-clas {
+    background-color: #f7f7f7;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
