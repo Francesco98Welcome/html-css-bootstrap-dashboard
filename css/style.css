@@ -51,11 +51,8 @@ main  {
 .section_blue {
     background-color: #1b72e8;
     width: 100%;
-    height: 125px;
 }
-.plus {
-    display: none;
-}
+
 .avatar {
     width: 25px;
     margin-right: 10px;
@@ -106,6 +103,12 @@ main  {
     .mob-app, .web-app, .blog-app {
         display: none;
     }
+    .angles-right:after {
+        content: '+';
+        background-color: #165bba;
+        border-radius: 20px;
+        padding: 6px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -114,5 +117,11 @@ main  {
     }
     .roi {
         display: none;
+    }
+    .angles-right:after {
+        content: '+';
+        background-color: #165bba;
+        border-radius: 20px;
+        padding: 6px;
     }
 }
