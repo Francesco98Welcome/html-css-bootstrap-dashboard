@@ -1,42 +1,118 @@
-header {
-    background-color: #f8f9fa;
-    position: sticky;
-    top: 0;
-}
-.input_header {
-    background-color: #e5e5e5;
-}
-.mobile-logo {
-    display: none;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 .all {
     height: 100vh;
 }
-aside {
-    width: 10%;
+
+/* HEADER */
+header {
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+    height: 65px;
 }
-main {
-    width: 90%;
+.input_header, .search {
+    background-color: #e5e5e5;
+}
+.input_header {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.mobile-logo {
+    display: none;
+}
+/* FINE HEADER */
+
+
+
+/* MAIN - ASIDE */
+
+.aside-main {
+    height: calc(100vh - 65px);
+}
+aside {
+    width: 150px;
+    background-image: url('../img/sidebar-bg.png');
+}
+.aside-sec {
+    background-color: #051e34;
+}
+.aside-main > aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main  {
+    width: calc(100% - 150px);
 }
 .section_blue {
     background-color: #1b72e8;
+    width: 100%;
+    height: 125px;
+}
+.plus {
+    display: none;
 }
 .avatar {
     width: 25px;
     margin-right: 10px;
 }
-.aside-sec {
-    background-color: #051e34;
-}
-span, .blaze {
+.etichetta {
     background-color: #165bba;
-    font-size: 14px;
 }
-.class {
+
+.class-faq-todo {
     border: 1px solid #d5d5d5;
 }
 .prox-clas {
     background-color: #f7f7f7;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+}
+
+.img-stat > div > p {
+    font-size: 14px;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 992px) {
+    .mobile-logo {
+        display: block;
+        width: 80px;
+    }
+    .desktop-logo {
+        display: none;
+    }
+    .bars, .question {
+        display: none;
+    }
+    aside {
+        width: 80px;
+    }
+    .lista-aside > li > span {
+        display: none;
+    }
+    .admin > ul > li > span {
+        display: none;
+    }
+    main  {
+        width: calc(100% - 80px);
+    }
+    .mob-app, .web-app, .blog-app {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .data-percentuale {
+        display: none;
+    }
+    .roi {
+        display: none;
+    }
 }

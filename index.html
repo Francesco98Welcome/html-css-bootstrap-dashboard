@@ -14,24 +14,52 @@
     <!--
          HEADER 
     -->
-    <div class="all">
+<div class="all">
 
     <header class="">
+        <div class="container-fluid">
+            <!--
         <div class="row align-items-center p-2 ">
             <div class="col bg-white p-1 desktop-logo">
-              <img src="img/logo.svg" class="w-75 ps-2" alt="">
+              <img src="img/logo.svg" class="w-75 ps-2" alt="">           
             </div>
-            <div class="mobile-logo">
-                <img src="img/mobile-logo.png" alt="">
+            
+                <img src="img/mobile-logo.png" class="mobile-logo" alt="">
+            
+
+            <div class="col-9 py-1 d-flex">
+                <div class="p-2 rounded-2 search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              <input type="text" placeholder="Prova a cercare: Lezioni di Laravel" class="w-100 p-2 border-0 input_header">
             </div>
-            <div class="col-9 py-1">
-              <input type="text" placeholder="Prova a cercare Laravel" class="w-100 p-2 rounded-2 border-0 input_header">
+            <div class="col bg-white p-1 text-center d-flex justify-content-between ">
+                <div class="bars"><i class="fa-solid fa-bars pd-5"></i></div>
+                <div class="question"><i class="fa-sharp fa-solid fa-question"></i></div>
+                <div><i class="fa-solid fa-bell bell text-warning"></i></div>
             </div>
-            <div class="col bg-white p-1 text-center d-flex justify-content-between px-3">
-                <div><i class="fa-solid fa-bars pd-5"></i></div>
-                <div><i class="fa-sharp fa-solid fa-question"></i></div>
-                <div><i class="fa-solid fa-bell"></i></div>
+        </div>
+         -->
+
+        <div class="row align-items-center">
+            <div class="col-auto bg-white p-2 pd-5 my-2 desktop-logo">
+                <img src="img/logo.svg" alt="" class="w-100 ps-2">
             </div>
+            <img src="img/mobile-logo.png" alt="" class="mobile-logo">
+            <div class="col">
+                <div class="p-2 mt-2 rounded-2 w-100 my-2 mx-2 search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Prova a cercare: Lezioni di Laravel" class=" w-75 border-0 input_header">
+                </div>
+                
+            </div>
+            <div class="col-auto d-flex py-1 m-3 bg-white">
+                <div class="bars mx-3"><i class="fa-solid fa-bars pd-5"></i></div>
+                <div class="question mx-3"><i class="fa-sharp fa-solid fa-question"></i></div>
+                <div class="mx-3"><i class="fa-solid fa-bell bell text-warning"></i></div>
+            </div>
+        </div>
+
         </div>
     </header>
 
@@ -40,52 +68,48 @@
         ASIDE - MAIN
     -->
     <div class="aside-main d-flex">
-        <aside class="border-black py-4 px-4 aside-sec ">
-            <ul class="list-unstyled text-light">
-                <li><i class="fa-solid fa-house px-2"></i> Home</li>
-                <li></li>
-                <li><i class="fa-solid fa-signal px-2 mt-4"></i> Signal</li>
+        <aside class="border-black  aside-sec ">
+            <div class="lista px-4 py-3">
+            <ul class="list-unstyled text-light lista-aside">
+                <li><i class="fa-solid fa-house px-2"></i> <span>Home</span></li>
+                
+                <li><i class="fa-solid fa-signal px-2 mt-4"></i> <span>Signal</span></li>
             </ul>
+            </div>
+            <div class="admin px-4">
+                <ul class="list-unstyled text-light">
+                    <li><i class="fa-solid fa-gear px-2"></i> <span>Admin</span></li>
+                </ul>
+            </div>
         </aside>
 
-        <main class="overflow-scroll border-black">
-            <section class="section_blue border-black text-light">
-                <div class="row py-4 px-3">
-                    <div class="col-6">
-                        <div class="d-flex">
-
-                          <div class="title">
-                            <h2>Boolean</h2> 
-                          </div>
-
-                          <div class="etichetta">
-                            <div class="ms-1 mt-2 p-1 rounded-5 fs-6 text-light blaze">Piano blaze</div>
-                          </div>
-
-                        </div>
-
-                        <div class="d-flex">
-                            <span class=" mt-1 p-1 rounded-5 text-light ">3 app</span>
-                            <div class="mt-1 ms-1">
-                            <i class="fa-sharp fa-solid fa-angles-right"></i>
+        <main class="overflow-auto">
+            <section class="section_blue text-light">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-sm-4 col-lg-6">
+                            <div class="pt-3">
+                                <h2 class="d-inline-block">Boolean</h2>
+                                <span class="rounded-5 py-1 fs-6 px-2 etichetta">Piano blaze</span>
                             </div>
-                            <span class="ms-2 mt-1 p-1 rounded-5 text-light ">Boolean mobile app</span>
-                            <span class="ms-2 mt-1 p-1 rounded-5 text-light ">Boolean web app</span> 
-                            <span class="ms-2 mt-1 p-1 rounded-5 text-light ">Boolean blog app</span>           
+                            <div>
+                                <span class="rounded-5 py-1 fs-6 px-2 etichetta">3 app</span>
+                                <span class="rounded-5 py-1 fs-6 px-2 etichetta mob-app">Boolean mobile app</span>
+                                <span class="rounded-5 py-1 fs-6 px-2 etichetta web-app">Boolean web app</span>
+                                <span class="rounded-5 py-1 fs-6 px-2 etichetta blog-app">Boolean blog app</span>
+                                <span class="rounded-5 py-1 fs-6 px-2 etichetta plus">+</span>
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="col-3">
-                        <div class="title-students">
-                            Studenti online negli ultimi 30 minuti
+                        <div class="col-12 col-sm-4 col-lg-4">
+                            <div class="pt-3">
+                                Studenti online negli ultimi 30 minuti
+                            </div>
+                            <div class="pt-2 fs-3">125</div>
                         </div>
-                        <div class="fs-2 mt-2">
-                            125
-                        </div>
-                    </div>
-                    <div class="col-3 text-end">
-                        <div>
-                            Nuovo studente
+                        <div class="col-12 order-first col-sm-4 order-sm-3 col-lg-2 d-flex">
+                            <div class="pt-3">
+                                Nuovo Studente <span class="p-2 rounded-2 border"><i class="fa-solid fa-plus"></i></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,9 +117,10 @@
 
 
             <section class="layout-table">
+                <div class="container-fluid">
                 <div class="row">
-                    <div class="col-8">
-                        <div class="class m-3 w-100 rounded-3">
+                    <div class="col-12 col-lg-8">
+                        <div class="class-faq-todo my-3 w-100 rounded-3">
                             <div class="p-2 fs-4 border-bottom prox-clas ">Prossime classi</div>
                             <div class="row p-3">
                             
@@ -104,74 +129,132 @@
                                         <thead>
                                           <tr>
                                             <th scope="col" class="w-50">Nome</th>
-                                            <th scope="col">Data di inizio</th>
-                                            <th scope="col">ROI</th>
-                                            <th scope="col">Stato</th>
-                                            <th scope="col">Azioni</th>
+                                            <th scope="col" class="data-percentuale">Data di inizio</th>
+                                            <th scope="col" class="roi">ROI</th>
+                                            <th scope="col" class="px-3">Stato</th>
+                                            <th scope="col" class="text-center">Azioni</th>
                                           </tr>
                                         </thead>
                                         <tbody>
                                           <tr>
                                             <td><img src="img/class-avatar.jpg" class="avatar" alt=""> Classe 75</td>
-                                            <td>Mark</td>
-                                            <td>20%</td>
-                                            <td>@mdo</td>
-                                            <td >
+                                            <td class="data-percentuale">15 Feb 2021</td>
+                                            <td class="data-percentuale">20%</td>
+                                            <td><div class="rounded-3 w-75 bg-success text-center text-light">Done</div></td>
+                                            <td class="d-flex justify-content-around">                                             
+                                                <div class="border border-secondary rounded-2 py-1 px-2 ">
+                                                    <i class="fa-solid fa-pen text-black-50 bg-black-50"></i>
+                                                </div>
                                                 
-                                                <i class="fa-solid fa-pen"></i>
-                                                
-                                                <i class="fa-solid fa-trash"></i>
-                                                
+                                                <div class="border border-secondary rounded-2 py-1  px-2 ">
+                                                    <i class="fa-solid fa-trash text-black-50 bg-black-50"></i>
+                                                </div>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td><img src="img/class-avatar.jpg" class="avatar" alt=""> Classe 76</td>
-                                            <td>Jacob</td>
-                                            <td>20%</td>
-                                            <td>@fat</td>
-                                            <td>eeee</td>
+                                            <td class="data-percentuale"d>16 Feb 2021</td>
+                                            <td class="data-percentuale">20%</td>
+                                            <td><div class="rounded-3 w-75 bg-success text-center text-light">Done</div></td>
+                                            <td class="d-flex justify-content-around">                                             
+                                                <div class="border border-secondary rounded-2 py-1 px-2 ">
+                                                    <i class="fa-solid fa-pen text-black-50 bg-black-50"></i>
+                                                </div>
+                                                
+                                                <div class="border border-secondary rounded-2 py-1  px-2 ">
+                                                    <i class="fa-solid fa-trash text-black-50 bg-black-50"></i>
+                                                </div>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <td><img src="img/class-avatar.jpg" class="avatar" alt=""> Classe 77</td>
-                                            <td>Larry the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>eeee</td>
-                                            <td>eeeee</td>
+                                            <td class="data-percentuale">17 Feb 2021</td>
+                                            <td class="data-percentuale">20%</td>
+                                            <td><div class="rounded-3 w-75 bg-warning text-center text-light">process</div></td>
+                                            <td class="d-flex justify-content-around">                                             
+                                                <div class="border border-secondary rounded-2 py-1 px-2 ">
+                                                    <i class="fa-solid fa-pen text-black-50 bg-black-50"></i>
+                                                </div>
+                                                
+                                                <div class="border border-secondary rounded-2 py-1  px-2 ">
+                                                    <i class="fa-solid fa-trash text-black-50 bg-black-50"></i>
+                                                </div>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <td><img src="img/class-avatar.jpg" class="avatar" alt=""> Classe 78</td>
-                                            <td>Mark</td>
-                                            <td>20%</td>
-                                            <td>@mdo</td>
-                                            <td>altro td</td>
+                                            <td class="data-percentuale">18 Feb 2021</td>
+                                            <td class="data-percentuale">20%</td>
+                                            <td><div class="rounded-3 w-75 bg-success text-center text-light">Done</div></td>
+                                            <td class="d-flex justify-content-around">                                             
+                                                <div class="border border-secondary rounded-2 py-1 px-2 ">
+                                                    <i class="fa-solid fa-pen text-black-50 bg-black-50"></i>
+                                                </div>
+                                                
+                                                <div class="border border-secondary rounded-2 py-1  px-2 ">
+                                                    <i class="fa-solid fa-trash text-black-50 bg-black-50"></i>
+                                                </div>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <td><img src="img/class-avatar.jpg" class="avatar" alt=""> Classe 79</td>
-                                            <td>Mark</td>
-                                            <td>20%</td>
-                                            <td>@mdo</td>
-                                            <td>altro td</td>
+                                            <td class="data-percentuale">19 Feb 2021</td>
+                                            <td class="data-percentuale">20%</td>
+                                            <td><div class="rounded-3 w-75 bg-danger text-center text-light">failed</div></td>
+                                            <td class="d-flex justify-content-around">                                             
+                                                <div class="border border-secondary rounded-2 py-1 px-2 ">
+                                                    <i class="fa-solid fa-pen text-black-50 bg-black-50"></i>
+                                                </div>
+                                                
+                                                <div class="border border-secondary rounded-2 py-1  px-2 ">
+                                                    <i class="fa-solid fa-trash text-black-50 bg-black-50"></i>
+                                                </div>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <td><img src="img/class-avatar.jpg" class="avatar" alt=""> Classe 80</td>
-                                            <td>Mark</td>
-                                            <td>20%</td>
-                                            <td>@mdo</td>
-                                            <td>altro td</td>
+                                            <td class="data-percentuale">20 Feb 2021</td>
+                                            <td class="data-percentuale">20%</td>
+                                            <td><div class="rounded-3 w-75 bg-success text-center text-light">Done</div></td>
+                                            <td class="d-flex justify-content-around">                                             
+                                                <div class="border border-secondary rounded-2 py-1 px-2 ">
+                                                    <i class="fa-solid fa-pen text-black-50 bg-black-50"></i>
+                                                </div>
+                                                
+                                                <div class="border border-secondary rounded-2 py-1  px-2 ">
+                                                    <i class="fa-solid fa-trash text-black-50 bg-black-50"></i>
+                                                </div>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <td><img src="img/class-avatar.jpg" class="avatar" alt=""> Classe 81</td>
-                                            <td>Mark</td>
-                                            <td>20%</td>
-                                            <td>@mdo</td>
-                                            <td>altro td</td>
+                                            <td class="data-percentuale">21 Feb 2021</td>
+                                            <td class="data-percentuale">20%</td>
+                                            <td><div class="rounded-3 w-75 bg-danger text-center text-light">failed</div></td>
+                                            <td class="d-flex justify-content-around">                                             
+                                                <div class="border border-secondary rounded-2 py-1 px-2 ">
+                                                    <i class="fa-solid fa-pen text-black-50 bg-black-50"></i>
+                                                </div>
+                                                
+                                                <div class="border border-secondary rounded-2 py-1  px-2 ">
+                                                    <i class="fa-solid fa-trash text-black-50 bg-black-50"></i>
+                                                </div>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <td><img src="img/class-avatar.jpg" class="avatar" alt=""> Classe 82</td>
-                                            <td>Mark</td>
-                                            <td>20%</td>
-                                            <td>@mdo</td>
-                                            <td>altro td</td>
+                                            <td class="data-percentuale">22 Feb 2021</td>
+                                            <td class="data-percentuale">20%</td>
+                                            <td><div class="rounded-3 w-75 bg-success text-center text-light">Done</div></td>
+                                            <td class="d-flex justify-content-around">                                             
+                                                <div class="border border-secondary rounded-2 py-1 px-2 ">
+                                                    <i class="fa-solid fa-pen text-black-50 bg-black-50"></i>
+                                                </div>
+                                                
+                                                <div class="border border-secondary rounded-2 py-1  px-2 ">
+                                                    <i class="fa-solid fa-trash text-black-50 bg-black-50"></i>
+                                                </div>
+                                            </td>
                                           </tr>
                                         </tbody>
                                       </table>
@@ -180,26 +263,24 @@
                         </div>
 
                         <div class="faq">
-                            <div class="class m-3 w-100 rounded-3">
+                            <div class="class-faq-todo my-3 w-100 rounded-3">
                                 <div class="p-2 fs-4 border-bottom prox-clas ">
                                     F.A.Q.
                                 </div>
                                 <div class="container pt-3 px-4">
                                     <div class="d-flex justify-content-between p-3 border-bottom">
                                         Come aggiungere un nuovo studente?
-                                        <div class="text-end px-3">
-                                            <i class="fa-duotone fa-arrow-down-from-line"></i>
-                                        </div>
+                                        <div class="text-end px-3"><i class="fa-solid fa-angle-down"></i></div>
                                     </div>
 
                                     <div class="d-flex justify-content-between p-3 border-bottom">
                                         Come aggiungere un nuovo studente?
-                                        <div class="text-end px-3">aaa</div>
+                                        <div class="text-end px-3"><i class="fa-solid fa-angle-down"></i></div>
                                     </div>
 
                                     <div class="d-flex justify-content-between p-3">
                                         Come aggiungere un nuovo studente?
-                                        <div class="text-end px-3">aaa</div>
+                                        <div class="text-end px-3"><i class="fa-solid fa-angle-down"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -208,17 +289,61 @@
 
 
 
-                    <div class="col-4 p-3">
-                        <div class="p-2 fs-4 border-bottom prox-clas ">
-                            F.A.Q.
+                    <div class="col-12 col-lg-4 my-3">
+                        <div class="faq">
+                            <div class="class-faq-todo  w-100 rounded-3">
+                                <div class="p-2 fs-4 border-bottom prox-clas ">
+                                    Todo
+                                </div>
+                                <div class="container-todo m-3 border rounded-2">
+                                    <div class="p-2 px-3 border-bottom"> 
+                                        <input type="checkbox"> Kickoff nuove classi
+                                    </div>
+                                    <div class="p-2 px-3 border-bottom"> 
+                                        <input type="checkbox"> Lezione su bootstrap in classe #75
+                                    </div>
+                                    <div class="p-2 px-3 border-bottom"> 
+                                        <input type="checkbox"> Controllare username github studenti
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="statistics my-3">
+                            <div class="class-faq-todo  w-100 rounded-3">
+                                <div class="m-3 rounded-1 border">
+                                    <div class="img-stat rounded-3">
+                                        <img src="img/stats.jpeg" class="w-100" alt="">
+                                        <div class="border-bottom px-3">
+                                            <h5>Utenti attivi</h5>
+                                            <p class="">Lista degli utenti attivi in piattaforma dell'ultimo mese</p>
+                                        </div>
+                                        <div class="px-3 pt-2 pb-2 border-bottom">
+                                            Gennaio: 1200
+                                        </div>
+                                        <div class="px-3 pt-2 pb-2 border-bottom">
+                                            Febbraio: 800
+                                        </div>
+                                        <div class="px-3 pt-2 pb-2 border-bottom">
+                                            Marzo: 1500
+                                        </div>
+                                        <div class="px-3 pt-2 pb-2 border-bottom">
+                                            <a href="#">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    
+                </div>
                 </div>
             </section>
         </main>
     </div>
     
-    </div>
+</div>
 
 </body>
 </html>
